@@ -3,7 +3,7 @@ import pandas as pd
 def transacciones(nombre_archivo):
     try:
         # Leer el archivo CSV con pandas
-        df = pd.read_csv("data\data.csv")
+        df = pd.read_csv("data.csv")
 
         # Calcular el balance
         creditos = df[df["tipo"] == "Crédito"]["monto"].sum()
